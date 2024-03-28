@@ -22,7 +22,7 @@ let scene = new ScrollMagic.Scene({
 const textAnim = TweenMax.fromTo(text, 10, {opacity: 1}, {opacity: 0});
 
 let scene2 = new ScrollMagic.Scene({
-    duration: 5000,
+    duration: 3000,
     triggerElement: intro,
     triggerHook: 0
 })
@@ -43,5 +43,5 @@ scene.on("update", e => {
 setInterval(() => {
     delay += (scrollpos - delay) * accelamount;
     video.currentTime = delay;
-}, 41.6);
+}, 33.33);
 
